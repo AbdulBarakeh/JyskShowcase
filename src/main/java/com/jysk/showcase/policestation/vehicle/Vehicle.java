@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
         use = JsonTypeInfo.Id.NAME,
         visible = true
 )
-@JsonSubTypes({
+@JsonSubTypes({//Use jackson to allow derived objects in the parsed JSON data and map them to the specific class.
         @JsonSubTypes.Type(value = Car.class, name = "CAR"),
         @JsonSubTypes.Type(value = Boat.class, name = "BOAT"),
         @JsonSubTypes.Type(value = Bike.class, name = "BIKE")

@@ -1,23 +1,20 @@
 package com.jysk.showcase.policestation.report;
-import com.jysk.showcase.policestation.vehicle.Vehicle;
 
 import java.time.LocalDateTime;
 
-public class Report {
+public abstract class Report {
     private Integer Id;
     private String Description;
     private LocalDateTime CreateTime;
     private LocalDateTime UpdateTime;
     private Boolean Solved;
     private LocalDateTime SolvedTime;
-    private com.jysk.showcase.policestation.vehicle.Vehicle Vehicle;
 
-    public Report(Integer id, String description, LocalDateTime createTime, LocalDateTime updateTime, Vehicle vehicle) {
+    public Report(Integer id, String description, LocalDateTime createTime, LocalDateTime updateTime) {
         setId(id);
         setDescription(description);
         setCreateTime(createTime);
         setUpdateTime(updateTime);
-        setVehicle(vehicle);
     }
 
     public LocalDateTime getUpdateTime() {
@@ -66,13 +63,5 @@ public class Report {
 
     public void setSolvedTime(LocalDateTime solvedTime) {
         SolvedTime = solvedTime;
-    }
-
-    public Vehicle getVehicle() {
-        return Vehicle;
-    }
-
-    public void setVehicle(Vehicle vehicle) {
-        Vehicle = vehicle;
     }
 }
