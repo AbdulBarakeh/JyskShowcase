@@ -1,0 +1,33 @@
+localhost:8080/swagger-ui.html
+  
+
+
+
+  {
+    "description": "They Stole my car after 6PM on saturday",
+    "createTime": "2023-03-13T07:03:49.463Z",
+    "updateTime": "2023-03-13T07:03:49.463Z",
+    "vehicle": {
+      "vehicleType": "CAR",
+      "type": "Sedan",
+      "fuelType": "diesel",
+      "color": "Teal",
+      "registrationNumber": "GT88996"
+    },
+    "solvedTime": "2023-03-13T07:03:49.463Z",
+    "solved": false
+  }
+{
+    "description": "The pirates Stole my boat and made me walk the plank",
+    "createTime": "2023-03-13T07:03:49.463Z",
+    "updateTime": "2023-03-13T07:03:49.463Z",
+    "vehicle": {
+      "vehicleType": "BOAT",
+      "year": 1988,
+      "numberOfSails": 6,
+      "color": "Teal",
+      "registrationNumber": "GT88916"
+    },
+    "solvedTime": null,
+    "solved": false
+  }
