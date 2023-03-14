@@ -16,26 +16,26 @@ public class VehicleReportController {
         this.service = service;
     }
 
-    @GetMapping(path = "/reports/vehicle")
-    public List<VehicleReport> GetReports() {
+    @GetMapping(path = "/reports/vehicle/")
+    public List<VehicleReport> GetVehicleReports() {
         return service.FindAll();
     }
 
-    @GetMapping(path = "/reports/vehicle/{id}")
-    public VehicleReport GetReport(@PathVariable int id) {
+    @GetMapping(path = "/reports/vehicle/id/{id}")
+    public VehicleReport GetVehicleReport(@PathVariable int id) {
         //Potentially make some null checking with exception being thrown.
         //At the moment the DAO returns null if it doesn't exist
         VehicleReport report = service.FindOne(id);
         return report;
     }
     @PostMapping(path = "/reports/vehicle/add")
-    public VehicleReport AddReport(@RequestBody VehicleReport report){
+    public VehicleReport AddVehicleReport(@RequestBody VehicleReport report){
         //Should probably return a status code as well
         service.Save(report);
         return report;
     }
-    @GetMapping(path = "/reports/vehicle/{type}")
-    public List<VehicleReport> GetReportsByType(@PathVariable VehicleType type){
+    @GetMapping(path = "/reports/vehicle/type/{type}")
+    public List<VehicleReport> GetReportsByVehicleType(@PathVariable VehicleType type){
        return service.FindByVehicleType(type);
     }
 

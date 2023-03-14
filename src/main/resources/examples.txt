@@ -31,3 +31,18 @@ localhost:8080/swagger-ui.html
     "solvedTime": null,
     "solved": false
   }
+
+{
+  "housing": {
+    "numberOfBathrooms": 2,
+    "squareFootage": 66,
+    "housingType": "APARTMENT",
+    "numberOfResidents": 2,
+    "insurance": "TRYG A/S"
+  },
+  "description": "Someone broke in",
+  "solvedTime": null,
+  "solved": false,
+  "createTime": "2023-03-14T13:07:27.958",
+  "updateTime": "2023-03-14T13:07:27.958"
+}

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @JsonTypeInfo(
         include = JsonTypeInfo.As.EXISTING_PROPERTY,
-        property = "HousingType",
+        property = "housingType",
         use = JsonTypeInfo.Id.NAME,
         visible = true
 )
